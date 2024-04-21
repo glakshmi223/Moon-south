@@ -1,0 +1,336 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: url(moon.jpg) no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: initial;
+}
+
+.navbar {
+    background-color: black;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+img {
+    position: relative;
+    display: inline-flex;
+    top: 0;
+    left: 0;
+    height: 150px;
+    width: 200px;
+
+}
+
+.nav-items a {
+    font-size: 10px;
+    color: black;
+    text-decoration: none;
+    border-radius: 10px;
+    background-color: #ffffff;
+    padding: 500px;
+    margin: 0 20px 0 20px;
+    font-style: italic;
+    font-weight: 500;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-menu {
+    display: list-item;
+    position: absolute;
+    background-color: #f9f9f9;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+.navbar .dropdown-menu a {
+    color: black;
+    text-decoration: none;
+    display: block;
+    font-size: 18px;
+}
+
+.navbar .dropdown-menu a:hover {
+    transform: scale(1.2);
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+    color: black;
+}
+
+.dropbtn {
+    font-size: 30px;
+    padding: 10px;
+    margin: 0 20px 0 20px;
+    border-radius: 10px;
+    font-style: italic;
+}
+
+.navbar a {
+    display: inline-flex;
+    font-size: 30px;
+    color: black;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 10px;
+    justify-content: center;
+}
+
+.navbar a:hover {
+    color: black;
+    transform: scale(1.2);
+}
+
+.home {
+    position: static;
+    width: 70%;
+    margin-top: 100px;
+    height: 400px;
+    text-align: justify;
+    padding: 70px 10% 0;
+    color: whitesmoke;
+    align-items: flex-end;
+    animation: slideTop 1s ease forwards;
+    animation-delay: .1s;
+}
+
+.home h1 {
+    font-size: 40px;
+    text-align: justify;
+    animation: slideRight 1s ease backwards;
+    animation-delay: .1s;
+
+}
+
+.home p {
+    font-size: 20px;
+    width: auto;
+    padding-bottom: 0;
+}
+
+.row .content {
+    display: flex;
+    align-items: center;
+    background: whitesmoke;
+    flex: 1;
+
+}
+
+.row h1 {
+    font-size: 50px;
+    text-align: center;
+    background: whitesmoke;
+    border-radius: 10px;
+}
+
+.content {
+    margin: 10px 0 10px 0px;
+    border-radius: 10px;
+}
+
+.content p {
+    display: inline-flex;
+    width: 50%;
+    text-align: justify;
+    color: black;
+    margin: 20px;
+    background: whitesmoke;
+    border: none;
+    padding: 10px;
+    height: auto;
+}
+
+.slider {
+    height: 500px;
+    margin: auto;
+    position: relative;
+    width: 100%;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+}
+
+.slide-track .card {
+    height: 400px;
+    width: 400px;
+}
+
+.slide-track {
+    display: flex;
+    width: calc(250px * 5);
+    animation: scroll 120s linear infinite;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(calc(-250px * 5));
+    }
+}
+
+.slide {
+    height: 400px;
+    width: 250px;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    perspective: 100px;
+}
+
+.slide .card {
+    width: 100%;
+    transition: transform 0.1s;
+    padding: 10px;
+}
+
+.slide .card:hover{
+    transform: translateZ(20px);
+    animation-play-state: paused;
+}
+
+.container1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.849);
+    padding: 40px;
+    background-clip: border-box;
+    margin-left: 11px;
+    margin-right: 11px;
+    border-radius: 10px;
+}
+
+.container1 img {
+    border-radius: 10px;
+}
+
+.container1 img:hover {
+    transform: scale(1.1)
+}
+
+
+footer {
+    background: black;
+    padding-top: 10px;
+}
+
+footer .container h2 {
+    color: whitesmoke;
+    margin: 20px;
+}
+
+footer .container p {
+    color: whitesmoke;
+    margin-left: 20px;
+}
+
+footer .container a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+footer .container b {
+    font-size: 20px;
+}
+
+footer .heading h2 {
+    margin-bottom: 30px;
+    color: rgba(255, 255, 255, 0.849);
+    ;
+}
+footer ul{
+    padding-top: 0;
+    margin-top: 0;
+}
+
+footer li {
+    list-style: none;
+    display: inline-flex;
+}
+
+footer li i {
+    color: whitesmoke;
+    justify-items: center;
+}
+
+footer li a {
+    font-size: 60px;
+    padding-top: 0;
+}
+
+footer li a:hover {
+    transform: scale(1.4);
+}
+
+footer .container h2:hover {
+    text-decoration: underline;
+}
+
+.bottom-bar {
+    font-size: large;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.849);
+    font-style: normal;
+    padding: 10px;
+    border-radius: 10px;
+    margin-left: 11px;
+    margin-right: 11px;
+}
+.bottom-bar a{
+    text-decoration: none;
+    color: black;
+}
+
+.top {
+    position: fixed;
+    bottom: 1.5rem;
+    right: 2.1rem;
+}
+.top i {
+    color: black;
+    background: rgba(255, 255, 255, 0.849);
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 0.5rem;
+    margin-bottom: 0;
+}
+
+@keyframes slideTop {
+    0% {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes slideRight {
+    0% {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
